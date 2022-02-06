@@ -7,7 +7,6 @@ import javax.xml.bind.DatatypeConverter;
 
 public class EncryptUtil {
 
-    //生のパスワード文字列とpepper文字列を連結した文字列をSHA-256関数でハッシュ化し、返却する
     public static String getPasswordEncrypt(String plainPass, String pepper) {
         String ret = "";
 
