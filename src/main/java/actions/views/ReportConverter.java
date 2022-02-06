@@ -18,11 +18,6 @@ public class ReportConverter {
                 rv.getUpdatedAt());
     }
 
-    /**
-     * DTOモデルのインスタンスからViewモデルのインスタンスを作成する
-     * @param r Reportのインスタンス
-     * @return ReportViewのインスタンス
-     */
     public static ReportView toView(Report r) {
 
         if (r == null) {
@@ -39,11 +34,6 @@ public class ReportConverter {
                 r.getUpdatedAt());
     }
 
-    /**
-     * DTOモデルのリストからViewモデルのリストを作成する
-     * @param list DTOモデルのリスト
-     * @return Viewモデルのリスト
-     */
     public static List<ReportView> toViewList(List<Report> list) {
         List<ReportView> evs = new ArrayList<>();
 
@@ -54,11 +44,6 @@ public class ReportConverter {
         return evs;
     }
 
-    /**
-     * Viewモデルの全フィールドの内容をDTOモデルのフィールドにコピーする
-     * @param r DTOモデル(コピー先)
-     * @param rv Viewモデル(コピー元)
-     */
     public static void copyViewToModel(Report r, ReportView rv) {
         r.setId(rv.getId());
         r.setEmployee(EmployeeConverter.toModel(rv.getEmployee()));
