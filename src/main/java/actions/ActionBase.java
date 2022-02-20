@@ -40,6 +40,7 @@ public abstract class ActionBase {
      */
     public abstract void process() throws ServletException, IOException;
 
+
     /**
      * @throws ServletException
      * @throws IOException

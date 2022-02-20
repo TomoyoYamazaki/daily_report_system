@@ -27,6 +27,16 @@
                     <th>内容</th>
                     <td><pre><c:out value="${report.content}" /></pre></td>
                 </tr>
+                <!-- 2/20　出勤時間・退勤時間　追加 -->
+                <tr>
+                    <th>出勤時間</th>
+                    <td><c:out value="${report.commutingTime}" /></td>
+                </tr>
+                <tr>
+                    <th>退勤時間</th>
+                     <td><c:out value="${report.leaveTime}" /></td>
+                </tr>
+
                 <tr>
                     <th>登録日時</th>
                     <fmt:parseDate value="${report.createdAt}" pattern="yyyy-MM-dd'T'HH:mm:ss" var="createDay" type="date" />

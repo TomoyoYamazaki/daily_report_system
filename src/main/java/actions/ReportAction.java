@@ -98,6 +98,8 @@ public class ReportAction extends ActionBase {
                     day,
                     getRequestParam(AttributeConst.REP_TITLE),
                     getRequestParam(AttributeConst.REP_CONTENT),
+                    getRequestParam(AttributeConst.REP_CMTIME),  //2/14追記
+                    getRequestParam(AttributeConst.REP_LVTIME),    //2/14追記
                     null,
                     null);
 

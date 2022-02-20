@@ -37,6 +37,16 @@ public class ReportView {
     private String content;
 
     /**
+     * 出勤時間 //2/13追記
+     */
+    private String  commutingTime;
+
+    /**
+     * 退勤時間 //2/13追記
+     */
+    private String leaveTime;
+
+    /**
      * 登録日時
      */
     private LocalDateTime createdAt;

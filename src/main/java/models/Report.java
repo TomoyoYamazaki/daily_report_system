@@ -76,6 +76,18 @@ public class Report {
     private String content;
 
     /**
+     * 出勤時刻 //2/13追記
+     */
+    @Column(name = JpaConst.REP_COL_CMTIME, nullable = false)
+    private String commutingTime;
+
+    /**
+     * 退勤時刻 //2/13追記
+     */
+    @Column(name = JpaConst.REP_COL_LVTIME, nullable = false)
+    private String leaveTime;
+
+    /**
      * 登録日時
      */
     @Column(name = JpaConst.REP_COL_CREATED_AT, nullable = false)
@@ -86,6 +98,8 @@ public class Report {
      */
     @Column(name = JpaConst.REP_COL_UPDATED_AT, nullable = false)
     private LocalDateTime updatedAt;
+
+
 
 }
 

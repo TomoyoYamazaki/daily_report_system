@@ -29,5 +29,20 @@
 <textarea name="${AttributeConst.REP_CONTENT.getValue()}" rows="10" cols="50">${report.content}</textarea>
 <br /><br />
 <input type="hidden" name="${AttributeConst.REP_ID.getValue()}" value="${report.id}" />
+
 <input type="hidden" name="${AttributeConst.TOKEN.getValue()}" value="${_token}" />
 <button type="submit">投稿</button>
+
+<!-- 2/13追記 2/20修正 -->
+<label for="appt">出勤時間:</label>
+
+<input type="time" id="commutingTime" name="${AttributeConst.REP_CMTIME.getValue()}"
+       min="09:00" max="18:00" value="${report.commutingTime}" required>
+
+<small>Office hours are 9am to 6pm</small>
+
+<label for="appt">退勤時間:</label>
+<input type="time" id="leaveTime" name="${AttributeConst.REP_LVTIME.getValue()}"
+       min="09:00" max="18:00" value="${report.leaveTime}" required>
+
+<small>Office hours are 9am to 6pm</small>
